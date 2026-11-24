@@ -5,18 +5,21 @@
     <p>Enter the three Dimensions to get the volume</p>
     <form form method="POST">
         <div>
-            <p>Length</p>
+
             <input placeholder="Length" value="{{dim_1}}" name="first_dim"></input>
+            <p></p>
         </div>
 
         <div>
-            <p>Width</p>
+
             <input placeholder="Width" value="{{dim_2}}" name="second_dim"></input>
+            <p></p>
         </div>
 
         <div>
-            <p>Height</p>
+
             <input placeholder="Height" {{dim_3}}" name="third_dim"></input>
+            <p></p>
         </div>
         <p>{{output}}</p>
         <button class="btn btn-warning">Calculate</button>
