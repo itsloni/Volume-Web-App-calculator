@@ -12,10 +12,10 @@ def home_post():
     dim1 = request.form["first_dim"]
     dim2 = request.form["second_dim"]
     dim3 = request.form["third_dim"]
-    volume =  dim1 * dim2 * dim3
+    volume =  float(dim1) * float(dim2) * float(dim3)
 
     print("Get post request")
-    return render_template("index.html")
+    return render_template("index.html"), output= volume
 
 app.run(host="0.0.0.0")
 
